@@ -1,6 +1,11 @@
 /* nav */
 
 .navbar {
-  margin-bottom: 20px;
-  background-color: red;
+  a, a:hover {
+    color: white;
+  }
 }
+
+.navbar-custom { 
+  background-color: rgb(134, 15, 15); 
+} 

@@ -6,21 +6,18 @@
   <div class="container">
     <h2 class="text-center">Discography</h1>
       <div class="row">
-          {% for discography in queen.discography %}
-          <div class="col-sm-6 col-md-3 mb-4">
-          <div class="card-deck">
-          <div class="card text-center" style="width: 18rem;">
-          <img src="img/discs/{{ discography.image }}" class="card-img-top" alt="...">
-          <div class="card-body">
-          <h3 class="card-title"><a href="{{ discography.title }}.html">{{ members.name }}</a></h3>
-          <p class="card-text">{{ discography.title }}</p>
-          <p class="card-text">{{ discography.year }}</p>
+        {% for discography in queen.discography %}
+          <div class="col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="img/discs/{{ discography.image }}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title"><a href="{{ discography.title }}.html">{{ members.name }}</a></h3>
+                <p class="card-text">{{ discography.title }}</p>
+                <p class="card-text">{{ discography.year }}</p>
+              </div>
+            </div>
           </div>
-          </div>
-          </div>
-          </div>
-          <hr>
-          {% endfor %}
+        {% endfor %}
       </div>
   </div>
 {% endblock %}

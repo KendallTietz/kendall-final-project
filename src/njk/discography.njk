@@ -1,14 +1,15 @@
 {% extends '_layouts/base.njk' %}
 
-{% block page_title %}Queen | Discography{% endblock %}
+{% block page_title %}Queen | Discography and Billboard Hits{% endblock %}
 
 {% block content %}
   <div class="container">
     <h2 class="text-center">Discography</h1>
+    <hr>
       <div class="row">
         {% for discography in queen.discography %}
           <div class="col-sm-6 col-md-4 mb-4">
-            <div class="card">
+            <div class="card-group text-center">
               <img src="img/discs/{{ discography.image }}" class="card-img-top" alt="...">
               <div class="card-body">
                 <h3 class="card-title"><a href="{{ discography.title }}.html">{{ members.name }}</a></h3>
@@ -20,4 +21,7 @@
         {% endfor %}
       </div>
   </div>
+
+<iframe title="Queen's Billboard Hits" aria-label="Stacked Bars"              id="datawrapper-chart-FFcJz" src="https://datawrapper.dwcdn.net/FFcJz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="621"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script>
 {% endblock %}

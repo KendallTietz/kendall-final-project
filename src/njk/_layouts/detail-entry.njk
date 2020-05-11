@@ -12,10 +12,12 @@
     </div>
     <div class="col-sm-8">
         <h2>{{members.name }}</h2>
+        <hr>
         <h5>Born: <span>{{ members.birthdate }}</span></h5>
         <h5>Birthplace: <span>{{ members.birthplace }}</span></h5>
         <h5>Instruments: <span>{{ members.instruments }}</span></h5>
         <h5>Tenure: <span>{{ members.tenure }}</span></h5>
+        <hr>
       {{ members.text | safe}}
     </div>
   </div>

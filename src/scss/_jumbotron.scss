@@ -1,9 +1,7 @@
 .jumbotron.banner {
   background: url(../img/queen-band-wallpaper.jpg) no-repeat center;
   background-size: cover;
-  // min-height: 250px;
   color: white;
-  // padding-top: 8rem
 }
 
 .jumbotron {
@@ -13,7 +11,7 @@
 .jumbotron img {
   height: 60px;
   vertical-align: middle;
-  margin-top: 2rem;
+  margin-top: 8rem;
 
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) { height: 80px; }
@@ -22,5 +20,5 @@
   @media (min-width: 768px) { height: 120px; }
 
   // Large devices (desktops, 992px and up)
-  // @media (min-width: 992px) { ... }
+  // @media (min-width: 992px) { height: 160px; }
 }
